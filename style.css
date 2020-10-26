@@ -84,6 +84,7 @@ header {
     font-size: 35px;
     text-decoration: none;
 }
+
 @media screen and (max-width: 1000px)
 {
     .header-right ul {
@@ -101,4 +102,21 @@ header {
     .hamburger-menu.active {
         display: block;
     }
+}
+
+/* CSS aggiunto durante l'esercitazione */
+.not-visible{
+    display: none !important;
+    opacity: 0;
+}
+
+.visible {
+    display: block !important;
+    animation: fadein 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1; }
 }
