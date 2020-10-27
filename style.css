@@ -103,20 +103,3 @@ header {
         display: block;
     }
 }
-
-/* CSS aggiunto durante l'esercitazione */
-.not-visible{
-    display: none !important;
-    opacity: 0;
-}
-
-.visible {
-    display: block !important;
-    animation: fadein 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-    from { opacity: 0;}
-    to { opacity: 1; }
-}

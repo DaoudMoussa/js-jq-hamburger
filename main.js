@@ -24,17 +24,16 @@
 // });
 
 /*========= Metodo jQuery aggiungendo classi =========*/
-// $('.hamburger-menu').addClass('not-visible');
 //
 // //aggiungere una funzione che faccia comparire l'hamburger menu al click dell'cona
 // $('.header-right > a').click(function() {
-//         $('.hamburger-menu').addClass('visible');
+//         $('.hamburger-menu').addClass('active');
 //
 // });
 //
 // // aggiungere funzione che chiuda l'hamburger menu al click dell'apposita icona
 // $('.hamburger-menu > a').click(function() {
-//         $('.hamburger-menu').removeClass('visible');
+//         $('.hamburger-menu').removeClass('active');
 // });
 
 /*========= Metodo Plain JS aggiungendo classi e senza modificare l'HTML=========*/
@@ -48,9 +47,9 @@ var hamburgerMenuCloser = document.getElementsByClassName('close')[0];
 var hamburgerMenu = document.getElementsByClassName('hamburger-menu')[0];
 
 hamburgerMenuOpener.addEventListener('click', function() {
-    hamburgerMenu.classList.add('visible');
+    hamburgerMenu.classList.add('active');
 });
 
 hamburgerMenuCloser.addEventListener('click', function() {
-    hamburgerMenu.classList.remove('visible');
+    hamburgerMenu.classList.remove('active');
 });
